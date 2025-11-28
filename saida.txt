@@ -1,0 +1,114 @@
+---AST---
+DEC(a)
+   NUM(3.00)
+---FIM---
+
+---AST---
+DEC(b)
+   NUM(1.00)
+---FIM---
+
+---AST---
+DEC(c)
+---FIM---
+
+---AST---
+DEC(d)
+   NUM(2.00)
+---FIM---
+
+---AST---
+ATR(a)
+   NUM(3.00)
+---FIM---
+
+1
+---AST---
+VAR(b)
+---FIM---
+
+---AST---
+ATR(c)
+   NUM(4.10)
+---FIM---
+
+2.00
+---AST---
+VAR(d)
+---FIM---
+
+3
+---AST---
+VAR(a)
+---FIM---
+
+4.10
+---AST---
+VAR(c)
+---FIM---
+
+3
+---AST---
+VAR(a)
+---FIM---
+
+-5
+---AST---
+OP(+)
+   NUM(-10.00)
+   NUM(5.00)
+---FIM---
+
+36
+---AST---
+OP(+)
+   OP(+)
+      NUM(-1.00)
+      OP(*)
+         NUM(5.00)
+         NUM(7.00)
+   OP(/)
+      OP(^)
+         NUM(2.00)
+         NUM(3.00)
+      NUM(4.00)
+---FIM---
+
+109
+---AST---
+OP(+)
+   OP(+)
+      NUM(1.00)
+      OP(*)
+         NUM(2.00)
+         NUM(3.00)
+   OP(/)
+      OP(^)
+         NUM(4.00)
+         NUM(5.00)
+      NUM(10.00)
+---FIM---
+
+0.67
+---AST---
+OP(/)
+   OP(*)
+      VAR(x)
+      VAR(y)
+   VAR(z)
+---FIM---
+
+0
+---AST---
+OP(/)
+   NUM(1.00)
+   NUM(2.00)
+---FIM---
+
+3.00
+---AST---
+OP(+)
+   VAR(a)
+   VAR(b)
+---FIM---
+
